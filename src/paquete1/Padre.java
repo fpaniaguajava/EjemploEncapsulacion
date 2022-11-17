@@ -1,4 +1,4 @@
-package com.fernandopaniagua.ejemplo.paquete1;
+package paquete1;
 
 public class Padre {
 	public String nombre;

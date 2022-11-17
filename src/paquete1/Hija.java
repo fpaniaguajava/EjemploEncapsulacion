@@ -1,8 +1,8 @@
-package com.fernandopaniagua.ejemplo.paquete1;
+package paquete1;
 
-public class Hijo {
+public class Hija extends Padre{
 	private Padre p;
-	public Hijo(Padre _p) {
+	public Hija(Padre _p) {
 		p=_p;
 	}
 	public void manipularPadre() {
@@ -10,9 +10,15 @@ public class Hijo {
 		System.out.println(p.nombre);
 		//¿Puedo acceder al apellido del padre? Sí, comparte paquete
 		System.out.println(p.apellido);
-		//¿Puedo acceder a la edad del padre? Sí, comparte paquete *
+		//¿Puedo acceder a la edad del padre? Sí, porque hereda
 		System.out.println(p.edad);
 		//¿Puedo acceder al saldo del padre? No, es privado
 		//System.out.println(p.saldo);
+		
+		//¿Puedo acceder a mi apellido?
+		System.out.println(this.apellido);
+		
+		//¿Puedo acceder a mi edad?
+		System.out.println(this.edad);
 	}
 }

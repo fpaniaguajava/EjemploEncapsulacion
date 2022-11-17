@@ -1,6 +1,6 @@
-package com.fernandopaniagua.ejemplo.paquete2;
+package paquete2;
 
-import com.fernandopaniagua.ejemplo.paquete1.Padre;
+import paquete1.Padre;
 
 public class MHijo {
 	private Padre p;
